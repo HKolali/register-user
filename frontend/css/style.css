@@ -1,0 +1,192 @@
+@font-face {
+    font-family: Anjoman;
+    src: url('../font/ANJOMAN-MEDIUM.TTF');
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url('../image/bg.jpg');
+    background-size: cover;
+    backdrop-filter: blur(5px);
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    position: relative;
+}
+
+#form {
+    width: 400px;
+    height: 650px;
+    background-color: rgba(255, 255, 255, 0.3);
+    border-radius: 1rem;
+    -webkit-border-radius: 1rem;
+    -moz-border-radius: 1rem;
+    -ms-border-radius: 1rem;
+    -o-border-radius: 1rem;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+#form h1 {
+    color: white;
+    text-align: center;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+    font-family: Anjoman;
+}
+
+#form .inputForm {
+    margin-top: 1.5rem;
+    position: relative;
+}
+
+#form .input {
+    width: 300px;
+    border: none;
+    outline: none;
+    padding: 0.7rem 1.5rem;
+    border-radius: 1rem;
+    -webkit-border-radius: 1rem;
+    -moz-border-radius: 1rem;
+    -ms-border-radius: 1rem;
+    -o-border-radius: 1rem;
+    text-indent: 40px;
+    font-size: 17px;
+    font-family: Anjoman;
+    background-color: rgba(255, 255, 255, 0.6);
+}
+
+form .inputForm::before {
+    content: " ";
+    font-size: 20px;
+    position: absolute;
+    left: 20px;
+    top: 15px;
+    display: block;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 20px;
+    height: 20px;
+    filter:invert(0.5);
+    -webkit-filter:invert(0.5);
+}
+
+form .inputForm:nth-child(2)::before {
+    background-image:url('../image/user.png');
+}
+
+form .inputForm:nth-child(3)::before {
+    background-image:url('../image/user.png');
+}
+
+form .inputForm:nth-child(4)::before {
+    background-image:url('../image/user.png');
+}
+
+form .inputForm:nth-child(5)::before {
+    background-image:url('../image/padlock.png');
+}
+
+#form .submitBtn {
+    width: 200px;
+    border: none;
+    outline: none;
+    padding: 0.7rem 1.5rem;
+    border-radius: 1rem;
+    -webkit-border-radius: 1rem;
+    -moz-border-radius: 1rem;
+    -ms-border-radius: 1rem;
+    -o-border-radius: 1rem;
+    font-size: 17px;
+    font-family: Anjoman;
+    background-color: rgb(32, 114, 66);
+    color: white;
+    cursor: pointer;
+}
+
+#form .submitBtn:hover {
+    box-shadow: 0 1px 15px 1px rgba(0, 0, 0, 0.5);
+}
+
+#form .btns {
+    display: flex;
+    margin-top: 5rem;
+}
+
+#form .btn {
+    width: 150px;
+    border: none;
+    outline: none;
+    padding: 0.7rem 1.5rem;
+    border-radius: 1rem;
+    -webkit-border-radius: 1rem;
+    -moz-border-radius: 1rem;
+    -ms-border-radius: 1rem;
+    -o-border-radius: 1rem;
+    font-size: 17px;
+    font-family: Anjoman;
+    background-color: rgb(31, 31, 30);
+    color: white;
+    cursor: pointer;
+    margin: 0.5rem;
+}
+
+.active{
+    display: flex !important;
+    transform: translateY(3rem);
+    -webkit-transform: translateY(3rem);
+    -moz-transform: translateY(3rem);
+    -ms-transform: translateY(3rem);
+    -o-transform: translateY(3rem);
+    transition: all 700ms ease;
+    -webkit-transition: all 700ms ease;
+    -moz-transition: all 700ms ease;
+    -ms-transition: all 700ms ease;
+    -o-transition: all 700ms ease;
+}
+
+.dialog-box-error{
+    width: 400px;
+    height: 150px;
+    background-color: white;
+    border-radius: 1rem;
+    -webkit-border-radius: 1rem;
+    -moz-border-radius: 1rem;
+    -ms-border-radius: 1rem;
+    -o-border-radius: 1rem;
+    position: absolute;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    display: none;
+    top:10px;
+}
+
+.dialog-box-error span{
+    font-size: 17px;
+    font-family: Anjoman;
+}
+
+.dialog-box-error button{
+    font-size: 17px;
+    font-family: Anjoman;
+    border: none;
+    width: 100px;
+    padding: 0.5rem 1rem;
+    border-radius: 1rem;
+    -webkit-border-radius: 1rem;
+    -moz-border-radius: 1rem;
+    -ms-border-radius: 1rem;
+    -o-border-radius: 1rem;
+    background-color: rgb(214, 120, 58);
+    color: white;
+}
